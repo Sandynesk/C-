@@ -1,0 +1,14 @@
+C:\Users\021.898672\Desktop\CU\MeuProjeto\bin\Debug\net8.0\MeuProjeto.exe
+C:\Users\021.898672\Desktop\CU\MeuProjeto\bin\Debug\net8.0\MeuProjeto.deps.json
+C:\Users\021.898672\Desktop\CU\MeuProjeto\bin\Debug\net8.0\MeuProjeto.runtimeconfig.json
+C:\Users\021.898672\Desktop\CU\MeuProjeto\bin\Debug\net8.0\MeuProjeto.dll
+C:\Users\021.898672\Desktop\CU\MeuProjeto\bin\Debug\net8.0\MeuProjeto.pdb
+C:\Users\021.898672\Desktop\CU\MeuProjeto\obj\Debug\net8.0\MeuProjeto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\021.898672\Desktop\CU\MeuProjeto\obj\Debug\net8.0\MeuProjeto.AssemblyInfoInputs.cache
+C:\Users\021.898672\Desktop\CU\MeuProjeto\obj\Debug\net8.0\MeuProjeto.AssemblyInfo.cs
+C:\Users\021.898672\Desktop\CU\MeuProjeto\obj\Debug\net8.0\MeuProjeto.csproj.CoreCompileInputs.cache
+C:\Users\021.898672\Desktop\CU\MeuProjeto\obj\Debug\net8.0\MeuProjeto.dll
+C:\Users\021.898672\Desktop\CU\MeuProjeto\obj\Debug\net8.0\refint\MeuProjeto.dll
+C:\Users\021.898672\Desktop\CU\MeuProjeto\obj\Debug\net8.0\MeuProjeto.pdb
+C:\Users\021.898672\Desktop\CU\MeuProjeto\obj\Debug\net8.0\MeuProjeto.genruntimeconfig.cache
+C:\Users\021.898672\Desktop\CU\MeuProjeto\obj\Debug\net8.0\ref\MeuProjeto.dll
