@@ -76,8 +76,7 @@ namespace ConsoleApp
 
         private static void Function2()
         {
-
-                List<string> diasDaSemana = new List<string>
+            List<string> diasDaSemana = new List<string>
             {
                 "Segunda-feira",
                 "Terça-feira",
@@ -87,6 +86,7 @@ namespace ConsoleApp
                 "Sábado",
                 "Domingo"
             };
+
             Console.WriteLine("Digite um número de 1 a 7 para verificar o dia da semana correspondente:");
             if (int.TryParse(Console.ReadLine(), out int number))
             {
@@ -99,8 +99,6 @@ namespace ConsoleApp
                     Console.WriteLine("Número fora do intervalo (1 a 7).");
                 }
             }
-
-
         }
 
         private static void Function3()
@@ -141,23 +139,105 @@ namespace ConsoleApp
                     break;
                 }
             }
-
         }
 
         private static void Function4()
         {
-            
-            
+            int[] numeros = new int[5];
+            int count = 0;
+            int maiorNumero = int.MinValue;
+
+            while (count < 5)
+            {
+                Console.WriteLine($"Digite o {count + 1}º número:");
+                if (int.TryParse(Console.ReadLine(), out int number))
+                {
+                    numeros[count] = number;
+                    if (number > maiorNumero)
+                    {
+                        maiorNumero = number;
+                    }
+                    count++;
+                }
+                else
+                {
+                    Console.WriteLine("Entrada inválida. Por favor, digite um número inteiro.");
+                }
+            }
+
+            Console.WriteLine($"O maior número é: {maiorNumero}");
         }
 
         private static void Function5()
         {
-            Console.WriteLine("Função 5 chamada!");
+            string[] caracteres = new string[5];
+            int contadorVogais = 0;
+
+            Console.WriteLine("Digite cinco caracteres:");
+
+            // Ler 5 caracteres do usuário
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write($"Digite o {i + 1}º caractere: ");
+                caracteres[i] = Console.ReadLine();
+            }
+
+            // Contar quantos caracteres são vogais
+            foreach (string caractere in caracteres)
+            {
+                if (caractere.Length > 0) // Verifica se o caractere não está vazio
+                {
+                    char primeiraLetra = char.ToLower(caractere[0]); // Converte o primeiro caractere para minúsculo
+                    switch (primeiraLetra)
+                    {
+                        case 'a':
+                        case 'e':
+                        case 'i':
+                        case 'o':
+                        case 'u':
+                            contadorVogais++;
+                            break;
+                    }
+                }
+            }
+
+            // Imprimir o resultado
+            Console.WriteLine($"Número de vogais digitadas: {contadorVogais}");
         }
 
         private static void Function6()
         {
-            Console.WriteLine("Função 6 chamada!");
+            int[] numeros = new int[8];
+            int pares = 0;
+            int impares = 0;
+
+            Console.WriteLine("Digite 8 números inteiros:");
+
+            for (int i = 0; i < 8; i++)
+            {
+                if (int.TryParse(Console.ReadLine(), out int numero))
+                {
+                    numeros[i] = numero;
+                    
+                    if (numero % 2 == 0)
+                    {
+                        pares++;
+                    }
+                    else
+                    {
+                        impares++;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Entrada inválida. Por favor, digite um número inteiro.");
+                    i--; // Decrementa o índice para que o usuário tenha a chance de corrigir a entrada
+                }
+            }
+
+            // Imprimir o número total de pares e ímpares
+            Console.WriteLine($"Número total de pares: {pares}");
+            Console.WriteLine($"Número total de ímpares: {impares}");
         }
     }
 }
